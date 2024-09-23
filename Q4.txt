@@ -1,0 +1,46 @@
+1. ¿Cómo elimino una rama creada en git?
+
+-Eliminar la rama local:
+ * primero debemos  abrir  la consola o terminal.
+ *Ejecuta el siguiente comando para eliminar la rama local:
+
+        git branch -D nombre_de_la_rama
+
+ -Eliminar la rama remota
+
+  *Para eliminar una rama remota, utiliza el siguiente comando:
+
+        git push origin --delete nombre_de_la_rama_remota
+       
+
+en nuestro laco utilizaremos  el primer comando ya que nuestra rama es local.
+
+2. —¿Por qué debería de usar la ramificación en proyectos?
+
+Es importante usar ramificación para el desarrolo de  proyectos de software. entre sus caracteristicas tenemos:
+* Organización y Aislamiento:
+        Las ramas permiten organizar el trabajo en unidades lógicas separadas. Cada rama representa una característica, corrección de errores o mejora específica.
+        Al trabajar en una rama, puedes aislar los cambios sin afectar la rama principal (generalmente llamada “master” o “main”). Esto evita conflictos y facilita la colaboración.
+*Desarrollo Paralelo:
+        Múltiples personas pueden trabajar en diferentes ramas al mismo tiempo. Esto acelera el desarrollo y permite que las características se desarrollen simultáneamente.
+        Cada rama puede tener su propio ciclo de vida y ser fusionada cuando esté lista.
+*Experimentación y Pruebas:
+        Puedes crear ramas para experimentar con nuevas ideas sin afectar la rama principal. Si la idea funciona, la fusionas; si no, simplemente la descartas.
+        Las ramas también son útiles para probar correcciones de errores antes de aplicarlas al código principal.
+*Versiones Estables:
+        La rama principal (master o main) generalmente contiene la versión estable del software. Las ramas de características o correcciones de errores se fusionan en ella una vez que han sido probadas y verificadas.
+*Control de Versiones:
+    Las ramas permiten mantener un historial completo de cambios. Puedes ver quién hizo qué, cuándo y por qué.
+    Si algo sale mal, puedes retroceder a una versión anterior utilizando las ramas.
+
+En resumen, las ramas son una herramienta poderosa para gestionar el desarrollo de software de manera eficiente, colaborativa y organizada
+
+
+3. Usted recibió un ticket [SEM-005] y una vez terminado el trabajo usted decide crear una rama para un posterior PR. ¿Qué nombre pondría a la rama al momento de crearla?
+
+Podria darsele un nombre relacionado con el numero de ticket  [SEM-005], se podria seguir una convension que refleje tanto el proposito de la rama como el numero de ticket como ser:
+
+
+feature/SEM-005: Si la rama está destinada a una nueva característica o funcionalidad.
+bugfix/SEM-005: Si la rama soluciona un error específico relacionado con el ticket.
+hotfix/SEM-005: Si es una corrección urgente para un problema crítico.
